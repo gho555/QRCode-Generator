@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<Generator />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Generator from "@/components/Generator.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: "App",
+	components: {
+		Generator,
+	},
+	created() {
+		document.title = "QRCode Generator";
+	},
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(to right, rgb(19, 106, 138), rgb(38, 120, 113));
 }
 </style>
