@@ -49,4 +49,27 @@ input {
 	background-color: #0006;
 	text-align: -webkit-center;
 }
+
+@media (max-width: 600px) {
+	input {
+		font-size: 1.5em;
+	}
+	.output {
+		width: 300px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 400px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	input {
+		font-size: 1em;
+	}
+	.output {
+		width: 260px;
+		margin: auto;
+	}
+}
 </style>
