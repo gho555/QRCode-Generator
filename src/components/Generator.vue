@@ -2,8 +2,8 @@
 	<div>
 		<h1>{{ title }}</h1>
 		<div>
-			<input type="text" size="25" placeholder="Type..." v-model="text" />
-		</div>
+      <input type="text" size="25" placeholder="Type..." v-model="text" debounce="500" />
+    </div>
 
 		<div v-if="text" class="output">
 			<qr-code :text="text"></qr-code>
