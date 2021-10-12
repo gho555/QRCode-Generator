@@ -22,9 +22,7 @@ export default {
 			text: "https://arnon.dev",
 		};
 	},
-	components: {
-		"qr-code": VueQRCodeComponent,
-	},
+  components: { "qr-code": VueQRCodeComponent },
 };
 </script>
 
