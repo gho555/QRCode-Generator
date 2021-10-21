@@ -7,12 +7,10 @@ import Generator from "@/components/Generator.vue";
 
 export default {
 	name: "App",
-	components: {
-		Generator,
-	},
-	created() {
-		document.title = "QRCode Generator";
-	},
+  components: { Generator },
+  created() {
+    document.title = "QRCode Generator";
+  },
 };
 </script>
 
