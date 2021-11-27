@@ -2,7 +2,7 @@
   <div>
     <h1>{{ title }}</h1>
     <div>
-      <input type="text" size="25" placeholder="Type..." v-model="text" debounce="500" />
+      <input type="text" size="25" placeholder="Type..." v-model="text" />
     </div>
     <div v-if="text" class="output">
       <qr-code :text="text"></qr-code>
@@ -12,13 +12,14 @@
 
 <script>
 import VueQRCodeComponent from "vue-qrcode-component";
+import { useDebouncedRef } from "./debounceRef";
 
 export default {
   name: "Generator",
   data() {
     return {
       title: "QRCode Generator",
-      text: "https://arnon.dev",
+      text: useDebouncedRef("https://arnon.dev"),
     };
   },
   components: { "qr-code": VueQRCodeComponent },
